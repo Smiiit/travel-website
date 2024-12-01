@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== Bootstrap ===============-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+
+    <title>Travel Here !</title>
+  </head>
+  <body class="dark-theme">
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <h3 style="padding-top: 1%;">
+          <a href="../index.html" class="nav__logo"> 
+            Travel Here !
+          </a>
+        </h3>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#place" class="nav__link">More in Hawai</a>
+            </li>
+
+            <div class="dropdown">
+              <a class="nav__item">
+                <a
+                  class="nav__link dropdown-toggle text-white"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Places</a
+                >
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Hawai</a>
+                <a class="dropdown-item" href="/pages/bali.html">Bali</a>
+                <a class="dropdown-item" href="/pages/borabora.html">Bora Bora</a>
+                <a class="dropdown-item" href="/pages/AnD.html">Andaman Nicobar</a>
+              </div>
+            </div>
+          </ul>
+
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== TITLE PAGE ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              <center>
+
+                <h1>
+                  WELCOME TO HAWAI <br />
+                </h1>
+                <h2>
+                  The Best Beaches & <br />
+                  Restraunts are here !
+                </h2>
+            </center>
+            </h2>
+            <p class="about__description">
+              You can find the most beautiful and pleasant places at the best
+              prices with special discounts, you choose the place we will guide
+              you all the way to wait, get your place now.
+            </p>
+            <!-- <a href="#" class="button">Reserve a place</a> -->
+          </div>
+
+          <div class="about__img">
+            <div class="about__img-overlay">
+              <img src="/pagesImages/hawai1.jpg" alt="" class="about__img-one" />
+            </div>
+
+            <div class="about__img-overlay">
+              <img src="../pagesImages/hawai7.jpg" alt="" class="about__img-two" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== VIDEO ====================-->
+      <section class="video section">
+        <h2 class="section__title">Hawai Video Tour</h2>
+
+        <div class="video__container container">
+          <p class="video__description">
+            Find out more with our video of the most beautiful and pleasant
+            places for you and your family.
+          </p>
+
+          <div class="video__content">
+            <video id="video-file">
+              <source src="../pagesImages/hawaivedio.mp4" type="video/mp4" />
+            </video>
+
+            <button class="button button--flex video__button" id="video-button">
+              <i class="ri-play-line video__button-icon" id="video-icon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PLACES ====================-->
+      <section class="place section" id="place">
+        <h2 class="section__title">More Places to Visit in Hawai</h2>
+
+        <div class="place__container container grid">
+          <!--==================== PLACES CARD 1 ====================-->
+          <div class="place__card">
+            <img src="/pagesImages/hawai8.jpg" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4,8</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Tanah Lot</h3>
+                <span class="place__subtitle">Bali</span>
+                <span class="place__price">$2499</span>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== PLACES CARD 2 ====================-->
+          <div class="place__card">
+            <img src="/pagesImages/hawai4.jpg" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">5,0</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Uluwatu</h3>
+                <span class="place__subtitle">Bali</span>
+                <span class="place__price">$1599</span>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!--==================== PLACES CARD 3 ====================-->
+          <div class="place__card">
+            <img src="/pagesImages/hawai9new.jpg" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4,9</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Bali Swing</h3>
+                <span class="place__subtitle">Bali</span>
+                <span class="place__price">$3499</span>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!--==================== PLACES CARD 4 ====================-->
+          <div class="place__card">
+            <img src="/pagesImages/hawai5.jpg" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4,8</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Ulun Danu</h3>
+                <span class="place__subtitle">Bali</span>
+                <span class="place__price">$2499</span>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!--==================== PLACES CARD 5 ====================-->
+          <div class="place__card">
+            <img src="/pagesImages/hawai6.jpg" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4,8</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Tegalalang</h3>
+                <span class="place__subtitle">Bali</span>
+                <span class="place__price">$1999</span>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!--==================== PLACES CARD 6 ====================-->
+          <div class="place__card">
+            <img src="/pagesImages/hawai2.jpg" alt="" class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4,9</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Kecak Bali</h3>
+                <span class="place__subtitle">Bali</span>
+                <span class="place__price">$1500</span>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">Travel Here !</h3>
+            <p class="footer__description">
+              Travel you choose the <br />
+              destination, we offer you the <br />
+              experience.
+            </p>
+            <div>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">About</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">New & Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Company</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">Team</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Plan y Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Become a member</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Support</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">FAQs</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Support Center</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy">
+            &#169; 2024 Smitkpanchal. All rigths reserved.
+          </p>
+          <div class="footer__terms">
+            <a href="#" class="footer__terms-link">Terms & Agreements</a>
+            <a href="#" class="footer__terms-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="../assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
